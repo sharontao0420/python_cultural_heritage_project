@@ -1,0 +1,1 @@
+python --version > week_1/python_version 
