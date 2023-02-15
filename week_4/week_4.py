@@ -29,7 +29,7 @@ nationality_writers = {}
 
 
 
-with open('Artworks1.csv') as file:
+with open('Artworks.csv') as file:
   processed_csv = csv.reader(file)
   header_row = next(processed_csv,None)
   for row in processed_csv:
