@@ -23,6 +23,9 @@
 #split out the art pieces into separate csv files. One for each nationality e.g. `(Belgian).csv`
 #All those files should be in a sub folder called ‘res’ (make sure you create the folder manually before running your script
 import csv
+import os
+
+os.makedirs('res', exist_ok=True)
 
 nationality_writers = {}
 # nationality_writers = {'belgian':{'file':"", 'csv':''}}
