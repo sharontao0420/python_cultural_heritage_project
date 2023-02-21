@@ -1,8 +1,8 @@
 import requests
 import json
 
-url = "https://collectionapi.metmuseum.org/public/collection/v1/search"
-res = requests.get(url, params={ "isOnView": True, "hasImages": True, "q": "van gogh" })
+url = "https://collectionapi.metmuseum.org/public/collection/v1/search"#?q=van gogh&isOnView=true&hasImages=true"
+res = requests.get(url, params={ "q": "van gogh", "isOnView": "true", "hasImages": "true" })
 res_json = res.json()
 # print(res_json)
 
