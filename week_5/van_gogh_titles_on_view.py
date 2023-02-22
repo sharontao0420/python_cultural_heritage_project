@@ -13,4 +13,4 @@ for objectID in objectIDs:
     res_json = res.json()
     titles.append(res_json["title"])
     
-print(json.dumps(titles, indent=2))
+print(titles)
