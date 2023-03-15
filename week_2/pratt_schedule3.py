@@ -169,6 +169,14 @@ print(schedule['wednesday'][612][0]['class'],'-',schedule['wednesday'][612][0]['
 the_class = schedule['wednesday'][612][0]
 print(the_class['class'],'-',the_class['prof'],'-',the_class['start'])
 
+#or
+the_class = schedule['wednesday'][612][0]
+print({the_class['class']} - {the_class['prof']} - {the_class['start']})
+
+#or
+the_class = schedule['wednesday'][612][0]
+print('{} - {} - {}'.format(the_class['class'], the_class['prof'], the_class['start']))
+
 #output sample (not the correct output:
 
 # ❯ python3 pratt_schedule3.py
