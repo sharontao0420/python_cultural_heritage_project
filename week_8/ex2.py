@@ -1,6 +1,7 @@
 import requests
 import cloudscraper
 from bs4 import BeautifulSoup
+import json
 
 url = "https://www.moma.org/artists/?exhibition_id=5224&page=1"
 
@@ -41,4 +42,5 @@ for art in all_artist:
         "works": artist_works
     }
 
-print(all_artist_data)
+# print the results visually prettier
+print(json.dumps(all_artist_data, indent=2)) 
