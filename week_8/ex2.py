@@ -43,4 +43,5 @@ for art in all_artist:
     }
 
 # print the results visually prettier
-print(json.dumps(all_artist_data, indent=2)) 
+# print(json.dumps(all_artist_data, indent=2)) 
+print(all_artist_data)

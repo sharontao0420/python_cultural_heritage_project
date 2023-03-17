@@ -41,4 +41,4 @@ for art in all_artist:
 
 
 print(all_artist_names)
-print(len(all_artist_names))
+# print(len(all_artist_names))
