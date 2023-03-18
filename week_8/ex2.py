@@ -38,9 +38,11 @@ for art in all_artist:
     artist_works = p2.text.strip()
     all_artist_names.append(artist_name)
     all_artist_data[artist_name]={
-        "bio": artist_bio,
-        "works": artist_works
+        "bio": artist_bio
     }
+
+    if "work" in artist_works:
+        all_artist_data[artist_name]["works"] = artist_works
 
 # print the results visually prettier
 # print(json.dumps(all_artist_data, indent=2)) 
